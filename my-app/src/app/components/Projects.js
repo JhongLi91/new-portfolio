@@ -22,7 +22,7 @@ export default function Projects() {
     Pandas to effectively present insights and findings.';
 
 	const MDSTSkills = [
-		'Python', 'Pandas', 'Jupyter', 'Data Visual',
+		'Python', 'Pandas', 'Jupyter Nbk', 'Data Visual',
 	]
 
   const SQLDes = 

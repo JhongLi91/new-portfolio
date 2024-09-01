@@ -48,7 +48,7 @@ div {
 
 .leftPage {
   position: relative;
-  width: 50%;
+  width: 40%;
 }
 
 .leftInner {
@@ -57,7 +57,7 @@ div {
 }
 
 .rightPage {
-  width: 50%;
+  width: 60%;
 }
 
 
@@ -88,6 +88,21 @@ div {
     }
   }
 
+  .HoverIcon {
+    &:hover {
+      color: var(--slate);
+    }
+  }
+
+  .HoverNav {
+    color: var(--slate);
+    &:hover {
+      color: white;
+      transform: translateX(2em);
+      transition: 0.5s;
+    }
+  }
+
 	.OrangeFont {
 		color: var(--color3);
 	}
@@ -100,6 +115,9 @@ div {
 		color: var(--lightest-slate);
 	}
 
+  .Invis {
+    visibility: visible;
+  }
 
 }
 
@@ -112,7 +130,7 @@ div {
     padding: 12px 24px 20px 12px;
 	}
 	.leftPage {
-		width: 100%;
+		width: 50%;
 	}
 
 	.rightPage {
@@ -120,4 +138,9 @@ div {
     padding-bottom: 100px;
 	}
 
+  .Invis {
+    visibility: hidden;
+    margin-top: -110px;
+    margin-bottom: -110px;
+  }
 }
