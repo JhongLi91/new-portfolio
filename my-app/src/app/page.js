@@ -23,7 +23,7 @@ export default function Home() {
 
       </div>
 
-			<div className = 'rightPage p-5 space-y-20'>
+			<div className = 'rightPage px-5 space-y-20'>
         <div className = 'flex flex-col'>
           <div className = 'OrangeFont font-bold text-sm pb-8'>
             ABOUT
@@ -38,6 +38,7 @@ export default function Home() {
 
         <Experience />
         <Projects />
+        <br/><br/><br/>
       </div>
 		</div>
   );

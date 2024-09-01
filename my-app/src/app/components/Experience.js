@@ -24,7 +24,7 @@ export default function Experience() {
 	]
 
 	const NYFGSkill = [
-		'Generative AI'
+		'Generative AI', 'New Tech', 'Marketing'
 	]
 
   return (
