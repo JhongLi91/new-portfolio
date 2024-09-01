@@ -3,31 +3,121 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --color1: #222831;
+  --color2: #393E46;
+  --color3: #D65A31;
+  --color4: #EEEEEE;
+  --color5: #272121;
+  --color6: #FF1E56;
+  --slate: #8892b0;
+  --light-slate: #a8b2d1;
+  --lightest-slate: #ccd6f6;
+  --white: #e6f1ff;
+  --font-sans: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif;
+  --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+ scroll-behavior: smooth;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: var(--color1);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+body, h1, h2, h3, h4, h5, h6, p, a {
+	font-family: var(--font-family);
+	line-height: 1.1;
+	letter-spacing: 0.5px;
+	font-size: large;
+	-webkit-font-smoothing: antialiased; /* Smoothing for better rendering */
+	-moz-osx-font-smoothing: grayscale;
+}
+
+div {
+	color: var(--color4);
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+	width: 100%;
+	padding: 80px 180px 80px 180px;
+
+}
+
+.leftPage {
+  position: relative;
+  width: 50%;
+}
+
+.leftInner {
+  position: sticky;
+  top: 0;
+}
+
+.rightPage {
+  width: 50%;
+  height: 100vh;
+}
+
+
+
+@layer components {
+	.Name {
+		color: var(--color4);
+		font-size: 48px;
+	}
+
+	.Role {
+		font-size: 20px;
+	}
+
+	.Description {
+		font-size: 16px;
+	}
+
+	.SkillBox {
+		border-radius: 999px;
+		width: 90px;
+		background-color: var(--color3);
+	}
+
+  .HoverLink {
+    &:hover {
+      color: var(--color3);
+    }
   }
+
+	.OrangeFont {
+		color: var(--color3);
+	}
+
+	.SlateFont {
+		color: var(--slate);
+	}
+
+	.LightSlateFont {
+		color: var(--lightest-slate);
+	}
+
+
+}
+
+
+@media (max-width: 1000px) {
+	.flexContainer {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+    padding: 12px 24px 20px 12px;
+	}
+	.leftPage {
+		width: 100%;
+	}
+
+	.rightPage {
+		width: 100%;
+	}
+
 }
