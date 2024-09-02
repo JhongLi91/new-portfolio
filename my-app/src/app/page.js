@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useLayoutEffect } from "react";
 import { IoRemoveOutline } from "react-icons/io5";
 
 import Experience from "./components/Experience.js";
@@ -9,6 +9,22 @@ import Social from "./components/Social.js";
 
 export default function Home() {
   const [onSection, setOnSection] = useState([1, 0, 0]);
+  const [scrollTop, setScrollTop] = useState(0);
+
+  const handleScroll = () => {
+    const scroll = window.document.documentElement.scrollTop;
+    setScrollTop(scroll);
+    if (scroll < 330) setOnSection([1, 0, 0]);
+    else if (scroll < 950) setOnSection([0, 1, 0]);
+    else setOnSection([0, 0, 1]);
+  };
+
+  useLayoutEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [scrollTop]);
 
   const Navigation = () => {
     return (
