@@ -16,9 +16,9 @@ export default function ProjectBox({
             project
           ) : (
             <a href={link} target="_blank" rel="noopener noreferrer">
-              <div className="flex items-end HoverLink">
+              <div className="items-end HoverLink">
                 {project}&nbsp;
-                <CiLocationArrow1 style={{ marginTop: "4px" }} />
+                <CiLocationArrow1 className="inline mt-[1px]" />
               </div>
             </a>
           )}

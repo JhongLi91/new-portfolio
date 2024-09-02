@@ -4,13 +4,26 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser";
 
 export default function ContactMe() {
-  const Text = () => {
+  const ContactForm = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
+    const [status, setStatus] = useState("");
+    const [messageSent, setMessageSent] = useState(false);
 
     const sendEmail = (e) => {
       e.preventDefault();
+      if (name == "" || email == "" || message == "") {
+        setStatus("Please fill out all fields.");
+        return;
+      }
+
+      if (messageSent) {
+        setStatus(
+          "You have already sent me kind message, save your kindness to someone else!",
+        );
+        return;
+      }
 
       const templateParams = {
         from_name: name,
@@ -29,12 +42,8 @@ export default function ContactMe() {
 
         .then(
           (result) => {
-            console.log(result.text);
-            console.log("message sent");
-            alert("Your message was successfully sent :)");
-            setName("");
-            setEmail("");
-            setMessage("");
+            setStatus("Your message was sent successfully!");
+            setMessageSent(true);
           },
           (error) => {
             console.log("ERROR");
@@ -101,16 +110,24 @@ export default function ContactMe() {
               className="ml-2 px-2 py-1 text-sm emailButton"
               type="reset"
               value="RESET"
+              onClick={() => setStatus("Reset!")}
             />
           </form>
+          <div style={{ color: messageSent ? "lightgreen" : "red" }}>
+            {status}
+          </div>
         </div>
       </div>
     );
   };
 
   return (
-    <div>
-      <Text />
+    <div className="flex flex-col">
+      <ContactForm />
+      <div className="LightSlateFont text-base py-4">
+        Or if you wish to email me directly at&nbsp;
+        <div className="OrangeFont inline">ljhg@umich.edu</div>
+      </div>
     </div>
   );
 }
