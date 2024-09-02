@@ -124,7 +124,7 @@ export default function Home() {
         <a name="abo" />
         <div className="flex flex-col" style={{ marginTop: "25px" }}>
           <div className="OrangeFont font-bold text-sm pb-8">ABOUT</div>
-          <div className="SlateFont text-base">
+          <div className="LightSlateFont text-base">
             Hi, this is Jian Hong Li. I&apos;m currently studying computer
             science at the University of Michigan. Don&apos;t worry, I&apos;m
             not going to write big paragraphs here. I started coding Sophomore
