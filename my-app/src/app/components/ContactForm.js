@@ -8,6 +8,13 @@ export default function ContactForm() {
   const [status, setStatus] = useState("");
   const [messageSent, setMessageSent] = useState(false);
 
+  const handleReset = () => {
+    setName("");
+    setEmail("");
+    setMessage("");
+    setStatus("Reset!");
+  };
+
   const sendEmail = (e) => {
     e.preventDefault();
     if (name == "" || email == "" || message == "") {
@@ -107,10 +114,13 @@ export default function ContactForm() {
             className="ml-2 px-2 py-1 text-sm emailButton"
             type="reset"
             value="RESET"
-            onClick={() => setStatus("Reset!")}
+            onClick={() => handleReset()}
           />
         </form>
-        <div style={{ color: messageSent ? "lightgreen" : "red" }}>
+        <div
+          className="pt-1 ml-1"
+          style={{ color: messageSent ? "lightgreen" : "red" }}
+        >
           {status}
         </div>
       </div>
