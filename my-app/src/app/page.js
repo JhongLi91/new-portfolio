@@ -42,7 +42,7 @@ export default function Home() {
             }}
             href="#abo"
           >
-            <IoRemoveOutline size={50} /> ABOUT
+            <IoRemoveOutline size={50} /> ABOUT ME
           </a>
           <a
             className="w-fit flex flex-row items-center HoverNav text-sm"
@@ -123,7 +123,7 @@ export default function Home() {
       <div className="rightPage px-5 space-y-20">
         <a name="abo" />
         <div className="flex flex-col" style={{ marginTop: "25px" }}>
-          <div className="OrangeFont font-bold text-sm pb-8">ABOUT</div>
+          <div className="OrangeFont font-bold text-sm pb-8">ABOUT ME</div>
           <div className="LightSlateFont text-base">
             Hi, this is Jian Hong Li. I&apos;m currently pursing my computer
             science degree at the University of Michigan in Ann Arbor. I started
