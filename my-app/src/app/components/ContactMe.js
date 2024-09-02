@@ -9,7 +9,7 @@ export default function ContactMe() {
   const handleCopy = () => {
     navigator.clipboard.writeText("ljhg@umich.edu");
     setCopied(true);
-    setTimeout(() => setCopied(false), 900);
+    setTimeout(() => setCopied(false), 800);
   };
 
   return (
@@ -19,7 +19,7 @@ export default function ContactMe() {
         Or if you wish to email me directly at&nbsp;
         <button
           className="underline underline-offset-4 inline HoverLink"
-          onClick={() => handleCopy()}
+          onClick={handleCopy}
         >
           ljhg@umich.edu
         </button>
