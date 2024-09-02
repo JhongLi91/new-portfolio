@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useLayoutEffect } from "react";
+import AnimatedCursor from "react-animated-cursor";
 import { IoRemoveOutline } from "react-icons/io5";
 
 import Experience from "./components/Experience.js";
@@ -11,11 +12,9 @@ import ContactMe from "./components/ContactMe.js";
 
 export default function Home() {
   const [onSection, setOnSection] = useState([1, 0, 0, 0]);
-  const [scrollTop, setScrollTop] = useState(0);
 
   const handleScroll = () => {
     const scroll = window.document.documentElement.scrollTop;
-    setScrollTop(scroll);
     if (scroll < 265) setOnSection([1, 0, 0, 0]);
     else if (scroll < 900) setOnSection([0, 1, 0, 0]);
     else if (scroll < 1700) setOnSection([0, 0, 1, 0]);
@@ -24,17 +23,18 @@ export default function Home() {
 
   useLayoutEffect(() => {
     window.addEventListener("scroll", handleScroll);
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [scrollTop]);
+  }, []);
 
   const Navigation = () => {
     return (
       <div className="Invis">
         <div className="py-32">
           <a
-            className="flex flex-row items-center HoverNav text-sm"
+            className="w-fit flex flex-row items-center HoverNav text-sm"
             onClick={() => setOnSection([1, 0, 0])}
             style={{
               marginLeft: onSection[0] == 1 ? "28px" : "",
@@ -45,7 +45,7 @@ export default function Home() {
             <IoRemoveOutline size={50} /> ABOUT
           </a>
           <a
-            className="flex flex-row items-center HoverNav text-sm"
+            className="w-fit flex flex-row items-center HoverNav text-sm"
             onClick={() => setOnSection([0, 1, 0])}
             style={{
               marginLeft: onSection[1] == 1 ? "28px" : "",
@@ -56,7 +56,7 @@ export default function Home() {
             <IoRemoveOutline size={50} /> EXPERIENCE
           </a>
           <a
-            className="flex flex-row items-center HoverNav text-sm"
+            className="w-fit flex flex-row items-center HoverNav text-sm"
             onClick={() => setOnSection([0, 0, 1])}
             style={{
               marginLeft: onSection[2] == 1 ? "28px" : "",
@@ -67,7 +67,7 @@ export default function Home() {
             <IoRemoveOutline size={50} /> PROJECTS
           </a>
           <a
-            className="flex flex-row items-center HoverNav text-sm"
+            className="w-fit flex flex-row items-center HoverNav text-sm"
             onClick={() => setOnSection([0, 0, 1])}
             style={{
               marginLeft: onSection[3] == 1 ? "28px" : "",
@@ -85,6 +85,25 @@ export default function Home() {
   return (
     <div className="flexContainer">
       <div className="leftPage">
+        <AnimatedCursor
+          innerSize={10}
+          outerSize={12}
+          color="255, 219, 187"
+          outerAlpha={0.2}
+          innerScale={0.7}
+          outerScale={5}
+          clickables={[
+            "a",
+            'input[type="text"]',
+            'input[type="submit"]',
+            'input[type="reset"]',
+            "label[for]",
+            "select",
+            "textarea",
+            "button",
+            ".link",
+          ]}
+        />
         <div className="leftInner">
           <div className="flex flex-col p-5">
             <div className="Name font-bold py-2">Jianhong Li</div>
