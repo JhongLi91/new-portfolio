@@ -21,8 +21,10 @@ export default function ProjectBox({
               target="_blank"
               rel="noopener noreferrer"
             >
-              {project}&nbsp;
-              <CiLocationArrow1 style={{ marginTop: "4px" }} />
+              <div className="flex items-end HoverLink">
+                {project}
+                <CiLocationArrow1 style={{ marginTop: "4px" }} />
+              </div>
             </a>
           )}
         </div>
@@ -32,7 +34,7 @@ export default function ProjectBox({
   };
 
   return (
-    <div className="w-full flex flex-row space-x-5">
+    <div className="w-full flex flex-row space-x-4">
       <div className="w-1/4">
         <img src={image.src} className="rounded-lg" />
       </div>
