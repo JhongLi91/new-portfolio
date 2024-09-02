@@ -1,7 +1,6 @@
 import { FaGithub } from "react-icons/fa";
 import { IoLogoLinkedin } from "react-icons/io";
 import { IoDocumentText } from "react-icons/io5";
-import resume from "../../../public/Resume.pdf";
 
 export default function Social() {
   return (
@@ -24,7 +23,7 @@ export default function Social() {
       </a>
       <a
         className="HoverIcon"
-        href={resume}
+        href="/Resume.pdf"
         target="_blank"
         rel="noopener noreferrer"
       >
