@@ -18,7 +18,7 @@ export default function Home() {
             className="flex flex-row items-center HoverNav text-sm"
             onClick={() => setOnSection([1, 0, 0])}
             style={{
-              marginLeft: onSection[0] == 1 ? "40px" : "",
+              marginLeft: onSection[0] == 1 ? "28px" : "",
               color: onSection[0] == 1 ? "white" : "",
             }}
             href="#abo"
@@ -29,7 +29,7 @@ export default function Home() {
             className="flex flex-row items-center HoverNav text-sm"
             onClick={() => setOnSection([0, 1, 0])}
             style={{
-              marginLeft: onSection[1] == 1 ? "40px" : "",
+              marginLeft: onSection[1] == 1 ? "28px" : "",
               color: onSection[1] == 1 ? "white" : "",
             }}
             href="#exp"
@@ -40,7 +40,7 @@ export default function Home() {
             className="flex flex-row items-center HoverNav text-sm"
             onClick={() => setOnSection([0, 0, 1])}
             style={{
-              marginLeft: onSection[2] == 1 ? "40px" : "",
+              marginLeft: onSection[2] == 1 ? "28px" : "",
               color: onSection[2] == 1 ? "white" : "",
             }}
             href="#pro"

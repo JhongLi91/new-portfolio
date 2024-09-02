@@ -76,7 +76,7 @@ export default function Projects() {
         />
         <ProjectBox
           image={chess}
-          project="Chess Online"
+          project="Chess"
           link="https://chess-9kokno1yv-jhongli91s-projects.vercel.app/game/pass-and-play"
           date="MAY 2024"
           description={ChessDes}
@@ -84,7 +84,7 @@ export default function Projects() {
         />
         <ProjectBox
           image={tictactoe}
-          project="Tic-Tac-Toe Tutorial"
+          project="Tic-Tac-Toe"
           link="https://portfolio-five-ivory-67.vercel.app/Projects/TicTacToe"
           date="MAY 2024"
           description={TTTDes}

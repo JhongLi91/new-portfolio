@@ -130,7 +130,7 @@ div {
     padding: 12px 24px 20px 12px;
 	}
 	.leftPage {
-		width: 50%;
+		width: 100%;
 	}
 
 	.rightPage {
@@ -139,8 +139,6 @@ div {
 	}
 
   .Invis {
-    visibility: hidden;
-    margin-top: -110px;
-    margin-bottom: -110px;
+    display: none;
   }
 }
