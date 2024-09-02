@@ -6,17 +6,20 @@ import { IoRemoveOutline } from "react-icons/io5";
 import Experience from "./components/Experience.js";
 import Projects from "./components/Projects.js";
 import Social from "./components/Social.js";
+import Contact from "./components/ContactMe.js";
+import ContactMe from "./components/ContactMe.js";
 
 export default function Home() {
-  const [onSection, setOnSection] = useState([1, 0, 0]);
+  const [onSection, setOnSection] = useState([1, 0, 0, 0]);
   const [scrollTop, setScrollTop] = useState(0);
 
   const handleScroll = () => {
     const scroll = window.document.documentElement.scrollTop;
     setScrollTop(scroll);
-    if (scroll < 265) setOnSection([1, 0, 0]);
-    else if (scroll < 900) setOnSection([0, 1, 0]);
-    else setOnSection([0, 0, 1]);
+    if (scroll < 265) setOnSection([1, 0, 0, 0]);
+    else if (scroll < 900) setOnSection([0, 1, 0, 0]);
+    else if (scroll < 1700) setOnSection([0, 0, 1, 0]);
+    else setOnSection([0, 0, 0, 1]);
   };
 
   useLayoutEffect(() => {
@@ -29,7 +32,7 @@ export default function Home() {
   const Navigation = () => {
     return (
       <div className="Invis">
-        <div className="py-24">
+        <div className="py-32">
           <a
             className="flex flex-row items-center HoverNav text-sm"
             onClick={() => setOnSection([1, 0, 0])}
@@ -62,6 +65,17 @@ export default function Home() {
             href="#pro"
           >
             <IoRemoveOutline size={50} /> PROJECTS
+          </a>
+          <a
+            className="flex flex-row items-center HoverNav text-sm"
+            onClick={() => setOnSection([0, 0, 1])}
+            style={{
+              marginLeft: onSection[3] == 1 ? "28px" : "",
+              color: onSection[3] == 1 ? "white" : "",
+            }}
+            href="#con"
+          >
+            <IoRemoveOutline size={50} /> CONTACT ME
           </a>
         </div>
       </div>
@@ -105,6 +119,9 @@ export default function Home() {
         <Experience />
         <a name="pro" />
         <Projects />
+        <a name="con" />
+        <ContactMe />
+
         <br />
         <br />
         <br />
