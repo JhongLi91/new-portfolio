@@ -35,7 +35,7 @@ export default function Home() {
         <div className="py-32">
           <a
             className="w-fit flex flex-row items-center HoverNav text-sm"
-            onClick={() => setOnSection([1, 0, 0])}
+            onClick={() => setOnSection([1, 0, 0, 0])}
             style={{
               marginLeft: onSection[0] == 1 ? "28px" : "",
               color: onSection[0] == 1 ? "white" : "",
@@ -46,7 +46,7 @@ export default function Home() {
           </a>
           <a
             className="w-fit flex flex-row items-center HoverNav text-sm"
-            onClick={() => setOnSection([0, 1, 0])}
+            onClick={() => setOnSection([0, 1, 0, 0])}
             style={{
               marginLeft: onSection[1] == 1 ? "28px" : "",
               color: onSection[1] == 1 ? "white" : "",
@@ -57,7 +57,7 @@ export default function Home() {
           </a>
           <a
             className="w-fit flex flex-row items-center HoverNav text-sm"
-            onClick={() => setOnSection([0, 0, 1])}
+            onClick={() => setOnSection([0, 0, 1, 0])}
             style={{
               marginLeft: onSection[2] == 1 ? "28px" : "",
               color: onSection[2] == 1 ? "white" : "",
@@ -68,7 +68,7 @@ export default function Home() {
           </a>
           <a
             className="w-fit flex flex-row items-center HoverNav text-sm"
-            onClick={() => setOnSection([0, 0, 1])}
+            onClick={() => setOnSection([0, 0, 0, 1])}
             style={{
               marginLeft: onSection[3] == 1 ? "28px" : "",
               color: onSection[3] == 1 ? "white" : "",
