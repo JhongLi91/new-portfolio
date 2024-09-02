@@ -17,7 +17,7 @@ export default function Home() {
     const scroll = window.document.documentElement.scrollTop;
     if (scroll < 265) setOnSection([1, 0, 0, 0]);
     else if (scroll < 900) setOnSection([0, 1, 0, 0]);
-    else if (scroll < 1700) setOnSection([0, 0, 1, 0]);
+    else if (scroll < 1900) setOnSection([0, 0, 1, 0]);
     else setOnSection([0, 0, 0, 1]);
   };
 
