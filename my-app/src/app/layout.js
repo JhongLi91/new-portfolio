@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" type="image/x-icon" href={favicon.src} />
+        <link rel="icon" href={favicon.src} />
       </head>
       <body className="w-dvw h-dvh">{children}</body>
     </html>
