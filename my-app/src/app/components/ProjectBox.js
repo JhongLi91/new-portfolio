@@ -15,14 +15,9 @@ export default function ProjectBox({
           {link == "nolink" ? (
             project
           ) : (
-            <a
-              className="flex flex-row HoverLink space-x-2"
-              href={link}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href={link} target="_blank" rel="noopener noreferrer">
               <div className="flex items-end HoverLink">
-                {project}
+                {project}&nbsp;
                 <CiLocationArrow1 style={{ marginTop: "4px" }} />
               </div>
             </a>

@@ -14,8 +14,8 @@ export default function Home() {
   const handleScroll = () => {
     const scroll = window.document.documentElement.scrollTop;
     setScrollTop(scroll);
-    if (scroll < 330) setOnSection([1, 0, 0]);
-    else if (scroll < 950) setOnSection([0, 1, 0]);
+    if (scroll < 265) setOnSection([1, 0, 0]);
+    else if (scroll < 900) setOnSection([0, 1, 0]);
     else setOnSection([0, 0, 1]);
   };
 
@@ -29,7 +29,7 @@ export default function Home() {
   const Navigation = () => {
     return (
       <div className="Invis">
-        <div className="py-10">
+        <div className="py-24">
           <a
             className="flex flex-row items-center HoverNav text-sm"
             onClick={() => setOnSection([1, 0, 0])}
@@ -89,7 +89,7 @@ export default function Home() {
 
       <div className="rightPage px-5 space-y-20">
         <a name="abo" />
-        <div className="flex flex-col">
+        <div className="flex flex-col" style={{ marginTop: "25px" }}>
           <div className="OrangeFont font-bold text-sm pb-8">ABOUT</div>
           <div className="SlateFont text-base">
             Hi, this is Jian Hong Li. I&apos;m currently studying computer
