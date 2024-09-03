@@ -109,7 +109,7 @@ export default function Home() {
           <div className="flex flex-col p-5">
             <div className="Name font-bold py-2">Jianhong Li</div>
             <div className="Role OrangeFont font-bold pb-4">
-              Full-Stack Engineer
+              Software Engineer
             </div>
             <div className="Description SlateFont">
               Aspired software developer at the University of Michigan.
