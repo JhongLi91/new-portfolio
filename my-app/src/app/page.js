@@ -95,6 +95,7 @@ export default function Home() {
           clickables={[
             "a",
             'input[type="text"]',
+            'input[type="email"]',
             'input[type="submit"]',
             'input[type="reset"]',
             "label[for]",

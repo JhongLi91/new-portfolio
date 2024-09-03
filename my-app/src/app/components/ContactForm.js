@@ -84,7 +84,7 @@ export default function ContactForm() {
           <br />
           <input
             className="rounded-md text-black w-72 mb-2 pl-2"
-            type="text"
+            type="email"
             name="user_email"
             value={email}
             onChange={(e) => {
