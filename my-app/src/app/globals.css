@@ -103,6 +103,25 @@ div {
     }
   }
 
+
+  .HoverProject {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .HoverProject:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .HoverExperience {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .HoverExperience:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+
   .emailButton {
     border-width: 2px;
 		border-radius: 999px;

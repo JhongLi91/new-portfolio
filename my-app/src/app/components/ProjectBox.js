@@ -29,7 +29,7 @@ export default function ProjectBox({
   };
 
   return (
-    <div className="w-full flex flex-row space-x-4">
+    <div className="w-full flex flex-row space-x-4 HoverProject">
       <div className="w-1/4">
         <img src={image.src} className="rounded-lg" />
       </div>

@@ -1,6 +1,5 @@
 import ProjectBox from "./ProjectBox.js";
 import typechallenger from "./../../../public/images/typechallenger.png";
-import mdst from "./../../../public/images/mdst.png";
 import sql from "./../../../public/images/sql.png";
 import chess from "./../../../public/images/Chess.jpg";
 import tictactoe from "./../../../public/images/tictactoe.png";
@@ -21,13 +20,6 @@ export default function Projects() {
     "SQLite3",
     "Git",
   ];
-
-  const MDSTDes =
-    "Developed advanced machine learning models in a team that predicted trends from data collected by the  \
-    National Health and Nutrition Examination Survey (NHANS). Designed data visualizations using Python and \
-    Pandas to effectively present insights and findings.";
-
-  const MDSTSkills = ["Python", "Pandas", "Jupyter Nbk", "Data Visual"];
 
   const SQLDes =
     "Wrote a program in C++ to emulate a basic relational database with an interface based on a subset of a \
@@ -57,14 +49,6 @@ export default function Projects() {
           date="JUNE 2024"
           description={TypeDes}
           skills={TypeSkills}
-        />
-        <ProjectBox
-          image={mdst}
-          project="Michigan Data Science Team"
-          link="nolink"
-          date="SEPT 2023 - DEC 2023"
-          description={MDSTDes}
-          skills={MDSTSkills}
         />
         <ProjectBox
           image={sql}

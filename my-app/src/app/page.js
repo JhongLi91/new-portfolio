@@ -53,7 +53,7 @@ export default function Home() {
             }}
             href="#exp"
           >
-            <IoRemoveOutline size={50} /> EXPERIENCE
+            <IoRemoveOutline size={50} /> TECHNICAL EXPERIENCE
           </a>
           <a
             className="w-fit flex flex-row items-center HoverNav text-sm"
