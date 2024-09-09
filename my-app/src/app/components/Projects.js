@@ -61,7 +61,7 @@ export default function Projects() {
         <ProjectBox
           image={chess}
           project="Chess"
-          link="https://chess-9kokno1yv-jhongli91s-projects.vercel.app/game/pass-and-play"
+          link="https://chess-9kokno1yv-jhongli91s-projects.vercel.app"
           date="MAY 2024"
           description={ChessDes}
           skills={ChessSkills}
