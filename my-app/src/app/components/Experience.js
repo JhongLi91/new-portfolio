@@ -1,6 +1,27 @@
 import ExperienceBox from "./ExperienceBox.js";
 
 export default function Experience() {
+  const KodelyDes = [
+    "Developing, in a team of four, a full-stack management app for school managers using React, TypeScript, and 		\
+		Nest.js, collaborating in an Agile environment to ensure efficient development cycles, clean code reviews, and	\
+		rapid feature deployment.",
+    "Managing a PostgreSQL database handling data for over 1,000 schools, ensuring efficient storage, retrieval, 		\
+		and security of large-scale educational data.",
+    "Maintain and update a React Native mobile application designed to assist teachers with lecture inspiration and \
+		classroom organization, decreasing administrative workload by 8 hours per week.",
+  ];
+
+  const KodelySkill = [
+    "Javascript",
+    "React.js",
+    "Node.js",
+    "Nest.js",
+    "PostgresSQL",
+    "ShadCN",
+    "React Native",
+    "Docker",
+  ];
+
   const HongKongDes = [
     "Led the full-stack development of the company’s first website with React.js and Node.js; the website attracted \
 		over 1,500 unique visits in the first month and boosted sales by 4.5%.",
@@ -23,15 +44,6 @@ export default function Experience() {
     "Nginx",
   ];
 
-  const MDST = [
-    "Developed advanced machine learning models in a team that predicted trends from data collected by the National \
-    Health and Nutrition Examination Survey (NHANS).",
-    "Designed and created data visualizations including the relationship between types of seafood consumed and      \
-    demographics using Python and Pandas to effectively present insights and findings.",
-  ];
-
-  const MDSTSkills = ["Python", "Pandas", "ML", "Jupyter Nbk", "Data Visuals"];
-
   return (
     <div className="flex flex-col">
       <div className="OrangeFont font-bold text-sm pb-8">
@@ -39,18 +51,18 @@ export default function Experience() {
       </div>
       <div className="space-y-8">
         <ExperienceBox
+          date="SEPT 2024 - PRESENT"
+          company="Kodely"
+          role="Software Engineer, Intern"
+          description={KodelyDes}
+          skills={KodelySkill}
+        />
+        <ExperienceBox
           date="JUNE 2024 - AUG 2024"
           company="Hong Kong Asian Supermarket"
           role="Full-Stack Engineer, Intern"
           description={HongKongDes}
           skills={HongKongSkill}
-        />
-        <ExperienceBox
-          date="SEPT 2023 - PRESENT"
-          company="Michigan Data Science Team"
-          role="Project Team Member"
-          description={MDST}
-          skills={MDSTSkills}
         />
       </div>
     </div>
