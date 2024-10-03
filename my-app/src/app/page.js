@@ -126,14 +126,14 @@ export default function Home() {
         <div className="flex flex-col" style={{ marginTop: "25px" }}>
           <div className="OrangeFont font-bold text-sm pb-8">ABOUT ME</div>
           <div className="LightSlateFont text-base">
-            Hi, this is Jian Hong Li. I&apos;m currently pursing my computer
+            Hi, this is Jianhong Li. I&apos;m currently pursing my computer
             science degree at the University of Michigan in Ann Arbor. I started
-            coding Sophomore year of High School and continued since. I enjoy
-            both learning and making interesting projects. My career interest is
-            a little uncertain right now, but I find cyber-secuity and web
-            development (both frontend and backend) super fun and interesting.
-            I'm looking forward to taking more new classes and exploring what I
-            really want to do in this amazing field of computer science!
+            coding during my Sophomore year of High School and continued since.
+            I enjoy both learning and making interesting projects. I love
+            working on web development (both frontend and backend). I'm also
+            fascinated with cybersecurity, cryptography, and computer network.
+            I'm looking forward to taking more new classes and exploring more of
+            this amazing field of computer science!
           </div>
         </div>
 
