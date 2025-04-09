@@ -8,11 +8,11 @@ export default function Experience() {
     "Scaled and maintained Kodely’s management apps, automating 45% of administrative workflows for school managers \
     overseeing classroom scheduling and program coordination.",
     "Upgraded platform authentication systems by migrating from self-managed JWTs to Firebase Auth across all       \
-    applications, improving security, scalability, and user experience."
+    applications, improving security, scalability, and user experience.",
     "Managed a production-scale PostgreSQL database supporting 200+ schools and 800+ instructors, optimizing for    \
-    performance, scalability, and data integrity across core services."
+    performance, scalability, and data integrity across core services.",
     "Collaborating in a cross-functional team of four in Agile sprints with Git-based code reviews and rapid        \
-    feature delivery."
+    feature delivery.",
   ];
 
   const KodelySkill = [
