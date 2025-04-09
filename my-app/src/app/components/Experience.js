@@ -2,24 +2,27 @@ import ExperienceBox from "./ExperienceBox.js";
 
 export default function Experience() {
   const KodelyDes = [
-    "Developing, in a team of four, a full-stack management app for school managers using React, TypeScript, and 		\
-		Nest.js, collaborating in an Agile environment to ensure efficient development cycles, clean code reviews, and	\
-		rapid feature deployment.",
-    "Managing a PostgreSQL database handling data for over 1,000 schools, ensuring efficient storage, retrieval, 		\
-		and security of large-scale educational data.",
-    "Maintain and update a React Native mobile application designed to assist teachers with lecture inspiration and \
-		classroom organization, decreasing administrative workload by 8 hours per week.",
+    "Led full-stack development of NalaAI, an AI-powered classroom platform, building advanced features like        \
+    real-time AI avatar lip-sync, a LeetCode-style coding editor, intelligent quiz generator, and AI image          \
+    generator using React.js, Nest.js, and Typescript.",
+    "Scaled and maintained Kodely’s management apps, automating 45% of administrative workflows for school managers \
+    overseeing classroom scheduling and program coordination.",
+    "Upgraded platform authentication systems by migrating from self-managed JWTs to Firebase Auth across all       \
+    applications, improving security, scalability, and user experience."
+    "Managed a production-scale PostgreSQL database supporting 200+ schools and 800+ instructors, optimizing for    \
+    performance, scalability, and data integrity across core services."
+    "Collaborating in a cross-functional team of four in Agile sprints with Git-based code reviews and rapid        \
+    feature delivery."
   ];
 
   const KodelySkill = [
     "Javascript",
     "React.js",
-    "Node.js",
     "Nest.js",
     "PostgresSQL",
-    "ShadCN",
-    "React Native",
-    "Docker",
+    "Rive React",
+    "Firebase",
+    "MikroORM",
   ];
 
   const HongKongDes = [
