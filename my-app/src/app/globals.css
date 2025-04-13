@@ -8,7 +8,8 @@
   --color3: #D65A31;
   --color4: #EEEEEE;
   --color5: #272121;
-  --color6: #FF1E56;
+  --color6: #ff1e56;
+  --color7: #e91e56;
   --slate: #8892b0;
   --light-slate: #a8b2d1;
   --lightest-slate: #ccd6f6;
@@ -26,24 +27,33 @@ body {
   background-color: var(--color1);
 }
 
-body, h1, h2, h3, h4, h5, h6, p, a {
-	font-family: var(--font-family);
-	line-height: 1.1;
-	letter-spacing: 0.5px;
-	font-size: large;
-	-webkit-font-smoothing: antialiased; /* Smoothing for better rendering */
-	-moz-osx-font-smoothing: grayscale;
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-family: var(--font-family);
+  line-height: 1.1;
+  letter-spacing: 0.5px;
+  font-size: large;
+  -webkit-font-smoothing: antialiased;
+  /* Smoothing for better rendering */
+  -moz-osx-font-smoothing: grayscale;
 }
 
 div {
-	color: var(--color4);
+  color: var(--color4);
 }
 
 .flexContainer {
   display: flex;
   flex-direction: row;
-	width: 100%;
-	padding: 80px 180px 80px 180px;
+  width: 100%;
+  padding: 80px 180px 80px 180px;
 
 }
 
@@ -65,24 +75,24 @@ div {
 
 @layer components {
 
-	.Name {
-		color: var(--color4);
-		font-size: 48px;
-	}
+  .Name {
+    color: var(--color4);
+    font-size: 48px;
+  }
 
-	.Role {
-		font-size: 20px;
-	}
+  .Role {
+    font-size: 20px;
+  }
 
-	.Description {
-		font-size: 16px;
-	}
+  .Description {
+    font-size: 16px;
+  }
 
-	.SkillBox {
-		border-radius: 999px;
-		width: 90px;
-		background-color: var(--color3);
-	}
+  .SkillBox {
+    border-radius: 999px;
+    width: 90px;
+    background-color: var(--color3);
+  }
 
   .HoverLink {
     &:hover {
@@ -98,6 +108,7 @@ div {
 
   .HoverNav {
     color: var(--slate);
+
     &:hover {
       color: white;
       transform: translateX(2em);
@@ -107,45 +118,46 @@ div {
 
 
   .HoverProject {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
   .HoverProject:hover {
-      transform: scale(1.05);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
   }
 
   .HoverExperience {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
   .HoverExperience:hover {
-      transform: scale(1.03);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   }
 
   .emailButton {
     border-width: 2px;
-		border-radius: 999px;
+    border-radius: 999px;
     border-color: var(--color3);
     color: var(--slate);
+
     &:hover {
       color: white;
       background-color: var(--color3);
     }
   }
 
-	.OrangeFont {
-		color: var(--color3);
-	}
+  .OrangeFont {
+    color: var(--color3);
+  }
 
-	.SlateFont {
-		color: var(--slate);
-	}
+  .SlateFont {
+    color: var(--slate);
+  }
 
-	.LightSlateFont {
-		color: var(--lightest-slate);
-	}
+  .LightSlateFont {
+    color: var(--lightest-slate);
+  }
 
   .Invis {
     visibility: visible;
@@ -155,20 +167,21 @@ div {
 
 
 @media (max-width: 1000px) {
-	.flexContainer {
-		display: flex;
-		flex-direction: column;
-		width: 100%;
+  .flexContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     padding: 12px 12px 12px 12px;
-	}
-	.leftPage {
-		width: 100%;
-	}
+  }
 
-	.rightPage {
-		width: 100%;
+  .leftPage {
+    width: 100%;
+  }
+
+  .rightPage {
+    width: 100%;
     padding-bottom: 100px;
-	}
+  }
 
   .Invis {
     display: none;
