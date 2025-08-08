@@ -128,12 +128,10 @@ export default function Home() {
           <div className="LightSlateFont text-base">
             Hi, this is Jianhong Li. I&apos;m currently pursing my computer
             science degree at the University of Michigan in Ann Arbor. I started
-            coding during my Sophomore year of High School and continued since.
-            I enjoy both learning and making interesting projects. I love
-            working on web development (both frontend and backend). I'm also
-            fascinated with cybersecurity, cryptography, and computer network.
-            I'm looking forward to taking more new classes and exploring more of
-            this amazing field of computer science!
+            coding during my Sophomore year of high school and continued since.
+            I enjoy both learning and making interesting projects. My career
+            interest is to be a system architecture for really innovative
+            projects!
           </div>
         </div>
 

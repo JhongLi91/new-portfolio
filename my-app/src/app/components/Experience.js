@@ -1,6 +1,29 @@
 import ExperienceBox from "./ExperienceBox.js";
 
 export default function Experience() {
+  const AmazonDes = [
+    "Built a CLI tool in Go for interfacing multiple service APIs; accelerated the development process by assisting \
+    engineers with configuring virtual networks and troubleshooting network connectivity.",
+    "Implemented and deployed a production-ready feature to display real-time network traffic metrics on the        \
+    customer dashboard. Designed a Smithy-defined REST API and Kotlin backend to query AWS CloudWatch with          \
+    sub-second latency.",
+    "Achieved 95% test coverage by writing comprehensive unit and end-to-end tests using JUnit and MockK (Kotlin    \
+    backend) and Cypress and Playwright (frontend).",
+    "Automated customer onboarding by configuring IAM role creation with internal permissions using AWS CDK,        \
+    reducing manual setup time by 80%.",
+    "Collaborated with functional teams in Agile sprints with iterative feature delivery, leveraging Git-based code \
+    reviews for quality and version control.",
+  ];
+
+  const AmazonSkill = [
+    "Kotlin",
+    "Go",
+    "AWS",
+    "UnitJ/MockK",
+    "Cypress/Playwright",
+    "Agile",
+  ];
+
   const KodelyDes = [
     "Led full-stack development of NalaAI, an AI-powered classroom platform, building advanced features like        \
     real-time AI avatar lip-sync, a LeetCode-style coding editor, intelligent quiz generator, and AI image          \
@@ -53,6 +76,13 @@ export default function Experience() {
         TECHNICAL EXPERIENCE
       </div>
       <div className="space-y-8">
+        <ExperienceBox
+          date="MAY 2025 - AUG 2025"
+          company="Amazon"
+          role="Software Dev Engineer, Intern"
+          description={AmazonDes}
+          skills={AmazonDes}
+        />
         <ExperienceBox
           date="SEPT 2024 - PRESENT"
           company="Kodely"
